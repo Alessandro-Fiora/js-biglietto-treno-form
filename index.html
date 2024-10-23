@@ -30,40 +30,60 @@
   </head>
   <body>
     <div class="container p-5">
-      <h1>Calcola il prezzo del tuo biglietto</h1>
-      <form>
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control"
-            id="fullname-input"
-            placeholder="Nome e cognome"
-            value="Alessandro Fiora"
-          />
-          <label for="fullname-input">Nome e cognome</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="number"
-            class="form-control"
-            id="km-input"
-            placeholder="Km da percorrere"
-            value="10"
-          />
-          <label for="km-input">Km da percorrere</label>
-        </div>
-        <select id="age-select" class="form-select" aria-label="age select">
-          <option>Minorenne</option>
-          <option>Maggiorenne</option>
-          <option>Over 65</option>
-        </select>
-        <button id="send-button" type="button" class="btn btn-primary">
-          Genera
-        </button>
-        <button id="cancel-button" type="button" class="btn btn-primary">
-          Annulla
-        </button>
-      </form>
+      <section class="input-section">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <form>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="fullname-input"
+              placeholder="Nome e cognome"
+              value="Alessandro Fiora"
+            />
+            <label for="fullname-input">Nome e cognome</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="km-input"
+              placeholder="Km da percorrere"
+              value="10"
+            />
+            <label for="km-input">Km da percorrere</label>
+          </div>
+          <select id="age-select" class="form-select" aria-label="age select">
+            <option>Minorenne</option>
+            <option>Maggiorenne</option>
+            <option>Over 65</option>
+          </select>
+          <button id="send-button" type="button" class="btn btn-primary">
+            Genera
+          </button>
+          <button id="cancel-button" type="button" class="btn btn-primary">
+            Annulla
+          </button>
+        </form>
+      </section>
+
+      <section id="ticket-section">
+        <!-- <div class="row">
+          <div class="col-4">
+            <h3 class="h5">NOME PASSEGGERO</h3>
+          </div>
+          <div class="col-2">
+            <h3 class="h6">Offerta</h3>
+          </div>
+          <div class="col-2">
+            <h3 class="h6">Carrozza</h3>
+          </div>
+          <div class="col-2">Codice CP</div>
+          <div class="col-2">
+            <h3 class="h6">Costo biglietto</h3>
+          </div>
+        </div> -->
+      </section>
     </div>
 
     <!-- BOOTSTRAP JS -->

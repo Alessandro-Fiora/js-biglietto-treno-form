@@ -5,6 +5,7 @@ const inputForm = document.getElementById("input-form");
 // recupero i dati inseriti nel form
 const fullnameEl = document.getElementById("fullname-input");
 const kmEl = document.getElementById("km-input");
+
 const ageEl = document.getElementById("age-select");
 
 // recupero bottone annulla del form
@@ -26,6 +27,7 @@ const emptyFields = () => {
 inputForm.addEventListener("submit", (event) => {
   // blocco l'invio, uso il form solo per i controlli, non per inviare dati al back-end
   event.preventDefault();
+
   /**
    * Funzione che calcola il prezzo del biglietto
    * @returns {Number} il prezzo totale del biglietto
@@ -81,7 +83,8 @@ inputForm.addEventListener("submit", (event) => {
   // * recupero il valore di fullname e lo salvo in una variabile
   const fullname = fullnameEl.value.trim();
   // * recupero il valore di km e lo salvo in una variabile
-  const km = kmEl.value;
+  const km = parseInt(kmEl.value);
+  console.log(typeof km);
   // * recupero il valore di age e lo salvo in una variabile
   const age = ageEl.value;
 

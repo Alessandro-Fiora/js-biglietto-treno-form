@@ -86,21 +86,21 @@ inputForm.addEventListener("submit", (event) => {
               <h3 class="h5 mb-5">NOME PASSEGGERO</h3>
               <p>${fullname}</p>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-center">
               <h3 class="h6 mb-5">Offerta</h3>
               <p>${offer}</p>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-center">
               <h3 class="h6 mb-5">Carrozza</h3>
               <p>${carriageNumber}</p>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-center">
               <h3 class="h6 mb-5">Codice CP</h3>
               <p>${CPnumber}</p>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-center">
               <h3 class="h6 mb-5">Costo biglietto</h3>
-              <p>${totPrice}</p>
+              <p>${totPrice}€</p>
             </div>
           </div>
         </div>`;

@@ -130,6 +130,7 @@ inputForm.addEventListener("submit", (event) => {
   emptyFields();
 });
 
+// * AL CLICK del bottone ANNULLA
 cancelButtonEl.addEventListener("click", (event) => {
   // * svuoto gli input
   emptyFields();

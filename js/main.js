@@ -12,7 +12,6 @@ const kmEl = document.getElementById("km-input");
 const ageEl = document.getElementById("age-select");
 
 const inputForm = document.getElementById("input-form");
-console.log(inputForm);
 
 const sendButtonEl = document.getElementById("send-button");
 const cancelButtonEl = document.getElementById("cancel-button");
@@ -77,27 +76,33 @@ inputForm.addEventListener("submit", (event) => {
 
   // * inserisco la card nell'html
   ticketSectionEL.innerHTML = `
-  <div class="row">
-    <div class="col-4">
-        <h3 class="h5">NOME PASSEGGERO</h3>
-        <p>${fullname}</p>
-    </div>
-    <div class="col-2">
-        <h3 class="h6">Offerta</h3>
-        <p>${offer}</p>
-    </div>
-    <div class="col-2">
-        <h3 class="h6">Carrozza</h3>
-        <p>${carriageNumber}</p>
-    </div>
-    <div class="col-2">
-        <h3 class="h6">Codice CP</h3>
-        <p>${CPnumber}</p>
-    </div>
-    <div class="col-2">
-        <h3 class="h6">Costo biglietto</h3>
-        <p>${totPrice}</p>
-    </div>
+ <h2 class="text-center">Il TUO BIGLIETTO</h2>
+
+        <div class="card p-5 my-5">
+          <h2>Dettaglio Biglietto</h2>
+          <hr />
+          <div class="row g-3">
+            <div class="col-4">
+              <h3 class="h5 mb-5">NOME PASSEGGERO</h3>
+              <p>${fullname}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Offerta</h3>
+              <p>${offer}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Carrozza</h3>
+              <p>${carriageNumber}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Codice CP</h3>
+              <p>${CPnumber}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Costo biglietto</h3>
+              <p>${totPrice}</p>
+            </div>
+          </div>
         </div>`;
   // * svuoto gli input
   emptyFields();

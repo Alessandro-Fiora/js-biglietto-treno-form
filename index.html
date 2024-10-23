@@ -29,79 +29,100 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
   </head>
   <body class="text-bg-danger">
-    <div class="container p-5">
-      <section class="input-section">
-        <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
-        <form id="input-form" class="row g-3">
-          <div class="col-4">
-            <div>
-              <label for="fullname-input" class="form-label"
-                >Nome e Cognome</label
+    <div class="container">
+      <section class="input-section mb-5 mt-3">
+        <h1 class="h2 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="card p-5 my-5">
+          <form id="input-form" class="row g-3">
+            <div class="col-4">
+              <div>
+                <label for="fullname-input" class="form-label"
+                  >Nome e Cognome</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullname-input"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-4">
+              <div>
+                <label for="km-input" class="form-label"
+                  >Km da percorrere</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="km-input"
+                  min="1"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-4">
+              <div>
+                <label for="age-select" class="form-label">Fascia d'età</label>
+                <select
+                  id="age-select"
+                  class="form-select"
+                  aria-label="age select"
+                  required
+                >
+                  <option>Minorenne</option>
+                  <option>Maggiorenne</option>
+                  <option>Over 65</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button
+                id="send-button"
+                type="submit"
+                class="btn btn-primary mx-3"
               >
-              <input
-                type="text"
-                class="form-control"
-                id="fullname-input"
-                required
-              />
-            </div>
-          </div>
-          <div class="col-4">
-            <div>
-              <label for="km-input" class="form-label">Km da percorrere</label>
-              <input
-                type="number"
-                class="form-control"
-                id="km-input"
-                min="1"
-                required
-              />
-            </div>
-          </div>
-          <div class="col-4">
-            <div>
-              <label for="age-select" class="form-label">Fascia d'età</label>
-              <select
-                id="age-select"
-                class="form-select"
-                aria-label="age select"
-                required
+                Genera
+              </button>
+              <button
+                id="cancel-button"
+                type="button"
+                class="btn btn-primary mx-3"
               >
-                <option>Minorenne</option>
-                <option>Maggiorenne</option>
-                <option>Over 65</option>
-              </select>
+                Annulla
+              </button>
             </div>
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <button id="send-button" type="submit" class="btn btn-primary mx-3">
-              Genera
-            </button>
-            <button
-              id="cancel-button"
-              type="button"
-              class="btn btn-primary mx-3"
-            >
-              Annulla
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
 
       <section id="ticket-section">
-        <!-- <div class="row">
-          <div class="col-4">
-            <h3 class="h5">NOME PASSEGGERO</h3>
-          </div>
-          <div class="col-2">
-            <h3 class="h6">Offerta</h3>
-          </div>
-          <div class="col-2">
-            <h3 class="h6">Carrozza</h3>
-          </div>
-          <div class="col-2">Codice CP</div>
-          <div class="col-2">
-            <h3 class="h6">Costo biglietto</h3>
+        <!-- <h2 class="text-center">Il TUO BIGLIETTO</h2>
+
+        <div class="card p-5 my-5">
+          <h2>Dettaglio Biglietto</h2>
+          <hr />
+          <div class="row g-3">
+            <div class="col-4">
+              <h3 class="h5 mb-5">NOME PASSEGGERO</h3>
+              <p>${fullname}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Offerta</h3>
+              <p>${offer}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Carrozza</h3>
+              <p>${carriageNumber}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Codice CP</h3>
+              <p>${CPnumber}</p>
+            </div>
+            <div class="col-2">
+              <h3 class="h6 mb-5">Costo biglietto</h3>
+              <p>${totPrice}</p>
+            </div>
           </div>
         </div> -->
       </section>

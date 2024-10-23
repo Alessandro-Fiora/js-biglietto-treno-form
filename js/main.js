@@ -7,8 +7,7 @@ const fullnameEl = document.getElementById("fullname-input");
 const kmEl = document.getElementById("km-input");
 const ageEl = document.getElementById("age-select");
 
-// recupero i bottoni nel form
-const sendButtonEl = document.getElementById("send-button");
+// recupero bottone annulla del form
 const cancelButtonEl = document.getElementById("cancel-button");
 
 // rercupero il posto dove stampare il biglietto dinamicamente

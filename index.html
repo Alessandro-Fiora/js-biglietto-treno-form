@@ -28,12 +28,18 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
   </head>
+  <!-- Elemento con colore di sfondo -->
   <body class="text-bg-danger">
     <div class="container">
+      <!-- Sezione input form -->
       <section class="input-section mt-3">
+        <!-- Titolo sezione -->
         <h1 class="h2 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <!-- Card con form -->
         <div class="card p-5 my-5">
+          <!-- Form con class ROW per layout -->
           <form id="input-form" class="row g-3">
+            <!-- Col Input Nome e Cognome -->
             <div class="col-4">
               <div>
                 <label for="fullname-input" class="form-label"
@@ -47,6 +53,7 @@
                 />
               </div>
             </div>
+            <!-- Col Input Km da percorrere -->
             <div class="col-4">
               <div>
                 <label for="km-input" class="form-label"
@@ -61,6 +68,7 @@
                 />
               </div>
             </div>
+            <!-- Col Select fascia d'età -->
             <div class="col-4">
               <div>
                 <label for="age-select" class="form-label">Fascia d'età</label>
@@ -76,7 +84,9 @@
                 </select>
               </div>
             </div>
+            <!-- Col Bottoni -->
             <div class="col-12 d-flex justify-content-center">
+              <!-- Bottone per inviare form -->
               <button
                 id="send-button"
                 type="submit"
@@ -84,6 +94,7 @@
               >
                 Genera
               </button>
+              <!-- Bottone solo per cancellare input -->
               <button
                 id="cancel-button"
                 type="button"
@@ -96,6 +107,7 @@
         </div>
       </section>
 
+      <!-- Sezione stampa biglietto -->
       <section id="ticket-section" class="mt-3">
         <!-- QUI VERRA' GENERATA DINAMICAMENTE IL BIGLIETTO -->
       </section>

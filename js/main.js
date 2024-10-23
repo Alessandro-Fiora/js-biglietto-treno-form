@@ -46,7 +46,14 @@ sendButtonEl.addEventListener("click", (event) => {
     }
     return totPrice.toFixed(2);
   };
-
+  const offerString = () => {
+    if (age === "Minorenne") return "Sconto Minorenni";
+    else if (age === "Over 65") return "Sconto Over 65";
+    else return "Biglietto standard";
+  };
+  const carriageNumberGenerator = () => Math.floor(Math.random() * 10 + 1);
+  const CPnumberGenerator = () =>
+    Math.floor(Math.random() * (99999 - 10000) + 10000);
   // * salvo il valore di fullname in una variabile
   const fullname = fullnameEl.value.trim();
   // * salvo il valore di km in una variabile
@@ -57,6 +64,9 @@ sendButtonEl.addEventListener("click", (event) => {
   //   console.log(fullname, km, age);
 
   const totPrice = calcTicketPrice();
+  const offer = offerString();
+  const carriageNumber = carriageNumberGenerator();
+  const CPnumber = CPnumberGenerator();
 
   // * creo la card
 
@@ -69,15 +79,15 @@ sendButtonEl.addEventListener("click", (event) => {
     </div>
     <div class="col-2">
         <h3 class="h6">Offerta</h3>
-        <p>xxxxxxx</p>
+        <p>${offer}</p>
     </div>
     <div class="col-2">
         <h3 class="h6">Carrozza</h3>
-        <p>5xxxx</p>
+        <p>${carriageNumber}</p>
     </div>
     <div class="col-2">
         <h3 class="h6">Codice CP</h3>
-        <p>xxxx</p>
+        <p>${CPnumber}</p>
     </div>
     <div class="col-2">
         <h3 class="h6">Costo biglietto</h3>

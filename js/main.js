@@ -11,6 +11,9 @@ const fullnameEl = document.getElementById("fullname-input");
 const kmEl = document.getElementById("km-input");
 const ageEl = document.getElementById("age-select");
 
+const inputForm = document.getElementById("input-form");
+console.log(inputForm);
+
 const sendButtonEl = document.getElementById("send-button");
 const cancelButtonEl = document.getElementById("cancel-button");
 
@@ -18,7 +21,8 @@ const ticketSectionEL = document.getElementById("ticket-section");
 
 // console.log(fullnameEl, kmEl, ageEl, sendButtonEl, cancelButtonEl);
 
-sendButtonEl.addEventListener("click", (event) => {
+inputForm.addEventListener("submit", (event) => {
+  event.preventDefault();
   const calcTicketPrice = () => {
     // * creo const prezzo al km
     const priceForKm = 0.21;
@@ -54,6 +58,7 @@ sendButtonEl.addEventListener("click", (event) => {
   const carriageNumberGenerator = () => Math.floor(Math.random() * 10 + 1);
   const CPnumberGenerator = () =>
     Math.floor(Math.random() * (99999 - 10000) + 10000);
+
   // * salvo il valore di fullname in una variabile
   const fullname = fullnameEl.value.trim();
   // * salvo il valore di km in una variabile
